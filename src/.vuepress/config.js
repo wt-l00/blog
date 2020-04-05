@@ -16,7 +16,9 @@ module.exports = {
   
     // Theme to use
     theme: 'meteorlxy',
-  
+
+    // Base
+    base: '/blog/',
     // Theme config
     themeConfig: {
       // Language of this theme. See the [Theme Language] section below.
