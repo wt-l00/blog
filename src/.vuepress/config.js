@@ -54,11 +54,6 @@ module.exports = {
             account: 'wt-l00',
             link: 'https://github.com/wt-l00',
           },
-          // Twitter account and link
-          //twitter: {
-          //  account: 'terassyi',
-          //  link: 'https://twitter.com/terassyi_',
-          //},
         },
       },
 
@@ -122,17 +117,9 @@ module.exports = {
       ],
       sidebarDepth: 2,
   
-      // Comments config. See the [Posts Comments] section below.
-      // comments: {
-      //   owner: 'terassyi',
-      //   repo: 'portfolio',
-      //   clientId: 'MY_CLIENT_ID',
-      //   clientSecret: 'MY_CLIENT_SECRET',
-      // },
-  
       // Pagination config (Optional)
       pagination: {
-        perPage: 5,
+        perPage: 10,
       },
   
       // Default Pages (Optional, the default value of all pages is `true`)
