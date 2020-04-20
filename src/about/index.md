@@ -14,9 +14,12 @@ wt-l00（わた）
 - soccer
 - clothes
 
+## CTF team
+Contrail
+
 ## 競技プログラミング
 - AtCoder : black13
 
 ## Contact
-ei13suke at gmail.com
+wt.l00e at gmail.com
 
