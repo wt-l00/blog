@@ -2,7 +2,7 @@
 
 module.exports = {
     // Title of your website
-    title: 'wt-l00',
+    title: 'wt-l00 memo',
   
     // Description of your website
     description: 'wt-l00 blog',
