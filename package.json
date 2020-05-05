@@ -14,5 +14,8 @@
   "scripts": {
     "src:dev": "vuepress dev src",
     "src:build": "vuepress build src --dest docs"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-nprogress": "^1.4.1"
   }
 }

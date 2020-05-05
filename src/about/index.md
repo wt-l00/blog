@@ -5,7 +5,7 @@ wt-l00（わた）
 
 ## language
 英語が話せるようになりたい．  
-静的な言語が好き．c++とかgoとか．python，ruby，javascriptもかけます．
+静的な言語が好き．goとかC++．python，ruby，javascriptも．
 エディタはVScodeを愛用しています．
 
 ## like

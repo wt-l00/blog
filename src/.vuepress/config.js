@@ -133,6 +133,8 @@ module.exports = {
       },
     },
 
+    plugins: ['@vuepress/nprogress'],
+    
     markdown: {
       lineNumbers: true
     }
