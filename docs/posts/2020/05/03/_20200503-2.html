@@ -6,7 +6,7 @@
     <title>load of sqli | wt-l00 memo</title>
     <meta name="generator" content="VuePress 1.4.1">
     <meta name="description" content="wt-l00 blog">
-    <link rel="preload" href="/blog/assets/css/0.styles.e1559409.css" as="style"><link rel="preload" href="/blog/assets/js/app.4ebc84f8.js" as="script"><link rel="preload" href="/blog/assets/js/7.cad17870.js" as="script"><link rel="preload" href="/blog/assets/js/17.60b90498.js" as="script"><link rel="prefetch" href="/blog/assets/js/1.94378849.js"><link rel="prefetch" href="/blog/assets/js/10.7b2f45de.js"><link rel="prefetch" href="/blog/assets/js/11.6b6ab1c8.js"><link rel="prefetch" href="/blog/assets/js/12.5f335b79.js"><link rel="prefetch" href="/blog/assets/js/13.61e12d61.js"><link rel="prefetch" href="/blog/assets/js/14.c858b097.js"><link rel="prefetch" href="/blog/assets/js/15.6b735ad6.js"><link rel="prefetch" href="/blog/assets/js/16.dd27bb1a.js"><link rel="prefetch" href="/blog/assets/js/18.05300069.js"><link rel="prefetch" href="/blog/assets/js/19.d1096e60.js"><link rel="prefetch" href="/blog/assets/js/3.bd31272e.js"><link rel="prefetch" href="/blog/assets/js/4.4260b830.js"><link rel="prefetch" href="/blog/assets/js/5.84a72133.js"><link rel="prefetch" href="/blog/assets/js/6.e561dd60.js"><link rel="prefetch" href="/blog/assets/js/8.0d06a535.js"><link rel="prefetch" href="/blog/assets/js/9.1fcdb666.js">
+    <link rel="preload" href="/blog/assets/css/0.styles.e1559409.css" as="style"><link rel="preload" href="/blog/assets/js/app.61f8cf39.js" as="script"><link rel="preload" href="/blog/assets/js/7.cad17870.js" as="script"><link rel="preload" href="/blog/assets/js/17.fe1b2920.js" as="script"><link rel="prefetch" href="/blog/assets/js/1.94378849.js"><link rel="prefetch" href="/blog/assets/js/10.7b2f45de.js"><link rel="prefetch" href="/blog/assets/js/11.6b6ab1c8.js"><link rel="prefetch" href="/blog/assets/js/12.5f335b79.js"><link rel="prefetch" href="/blog/assets/js/13.61e12d61.js"><link rel="prefetch" href="/blog/assets/js/14.c858b097.js"><link rel="prefetch" href="/blog/assets/js/15.6b735ad6.js"><link rel="prefetch" href="/blog/assets/js/16.f7ceb661.js"><link rel="prefetch" href="/blog/assets/js/18.9393ea26.js"><link rel="prefetch" href="/blog/assets/js/19.d1096e60.js"><link rel="prefetch" href="/blog/assets/js/3.bd31272e.js"><link rel="prefetch" href="/blog/assets/js/4.4260b830.js"><link rel="prefetch" href="/blog/assets/js/5.84a72133.js"><link rel="prefetch" href="/blog/assets/js/6.e561dd60.js"><link rel="prefetch" href="/blog/assets/js/8.0d06a535.js"><link rel="prefetch" href="/blog/assets/js/9.1fcdb666.js">
     <link rel="stylesheet" href="/blog/assets/css/0.styles.e1559409.css">
   </head>
   <body>
@@ -24,11 +24,9 @@
       Created : 2020-05-03
     </span> <span class="update-date" data-v-4e23451f>
       Updated : 2020-05-03
-    </span></section> <section class="post-links" data-v-4e23451f><a href="/blog/posts/2020/05/01/_20200501.html" class="post-link" data-v-4e23451f>
-      Previous Post : システムコールの追加の仕方（Linux）
-    </a> <a href="/blog/posts/2020/05/03/_20200503-1.html" class="post-link" data-v-4e23451f>
-      Next Post : runc build
-    </a></section></section> <article class="main-div"><div class="post-content content content__default"><h1 id="load-of-sqli"><a href="#load-of-sqli" class="header-anchor">#</a> Load of sqli</h1> <p>これは，Load of sqliのwriteup兼自分のメモ</p> <h2 id="gremlin"><a href="#gremlin" class="header-anchor">#</a> gremlin</h2> <h3 id="問題"><a href="#問題" class="header-anchor">#</a> 問題</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+    </span></section> <section class="post-links" data-v-4e23451f><a href="/blog/posts/2020/05/03/_20200503-1.html" class="post-link" data-v-4e23451f>
+      Previous Post : runc build
+    </a> <!----></section></section> <article class="main-div"><div class="post-content content content__default"><h1 id="load-of-sqli"><a href="#load-of-sqli" class="header-anchor">#</a> Load of sqli</h1> <p>これは，Load of sqliのwriteup兼自分のメモ</p> <h2 id="gremlin"><a href="#gremlin" class="header-anchor">#</a> gremlin</h2> <h3 id="問題"><a href="#問題" class="header-anchor">#</a> 問題</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
   <span class="token keyword">include</span> <span class="token double-quoted-string string">&quot;./config.php&quot;</span><span class="token punctuation">;</span>
   <span class="token function">login_chk</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token function">dbconnect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -415,11 +413,9 @@ NULLバイトアタックを使ってもできないので他を考えました�
       Created : 2020-05-03
     </span> <span class="update-date" data-v-4e23451f>
       Updated : 2020-05-03
-    </span></section> <section class="post-links" data-v-4e23451f><a href="/blog/posts/2020/05/01/_20200501.html" class="post-link" data-v-4e23451f>
-      Previous Post : システムコールの追加の仕方（Linux）
-    </a> <a href="/blog/posts/2020/05/03/_20200503-1.html" class="post-link" data-v-4e23451f>
-      Next Post : runc build
-    </a></section></section> <div id="post-comments" class="main-div"><!----></div></div></main> <aside class="aside" data-v-4dd605a1><div class="info-card main-div" data-v-9d847660 data-v-4dd605a1><div class="info-card-header" style="background-size:cover;background-repeat:no-repeat;background-position:center;background-attachment:scroll;background-image:url(/blog/img/bg.jpg);" data-v-9d847660><img src="/blog/img/avatar.jpg" alt="wt" class="info-avatar" data-v-9d847660></div> <div class="info-card-body" data-v-9d847660><section class="info-nickname" data-v-9d847660>
+    </span></section> <section class="post-links" data-v-4e23451f><a href="/blog/posts/2020/05/03/_20200503-1.html" class="post-link" data-v-4e23451f>
+      Previous Post : runc build
+    </a> <!----></section></section> <div id="post-comments" class="main-div"><!----></div></div></main> <aside class="aside" data-v-4dd605a1><div class="info-card main-div" data-v-9d847660 data-v-4dd605a1><div class="info-card-header" style="background-size:cover;background-repeat:no-repeat;background-position:center;background-attachment:scroll;background-image:url(/blog/img/bg.jpg);" data-v-9d847660><img src="/blog/img/avatar.jpg" alt="wt" class="info-avatar" data-v-9d847660></div> <div class="info-card-body" data-v-9d847660><section class="info-nickname" data-v-9d847660>
       wt
     </section> <section class="info-desc" data-v-9d847660>go go go</section> <section class="info-contact" data-v-9d847660><section data-v-9d847660><span title="Nagoya in Japan" data-v-9d847660 data-v-9d847660><svg class="icon" style="font-size:1em;" data-v-9d847660 data-v-9d847660><title data-v-9d847660 data-v-9d847660>Nagoya in Japan</title><use xlink:href="#icon-location" data-v-9d847660 data-v-9d847660></use></svg><span class="info-text" data-v-9d847660 data-v-9d847660>
           Nagoya in Japan
@@ -434,6 +430,6 @@ NULLバイトアタックを使ってもできないので他を考えました�
     </a> <span data-v-1375e54c> | </span> <a href="https://github.com/meteorlxy/vuepress-theme-meteorlxy" target="_blank" data-v-1375e54c>
         meteorlxy
       </a></p> <p class="footer-text" data-v-1375e54c>Copyright 2018-present <a href="https://github.com/meteorlxy" target="_blank">meteorlxy</a> | MIT License</p></footer></div><div class="global-ui"><!----><!----></div></div>
-    <script src="/blog/assets/js/app.4ebc84f8.js" defer></script><script src="/blog/assets/js/7.cad17870.js" defer></script><script src="/blog/assets/js/17.60b90498.js" defer></script>
+    <script src="/blog/assets/js/app.61f8cf39.js" defer></script><script src="/blog/assets/js/7.cad17870.js" defer></script><script src="/blog/assets/js/17.fe1b2920.js" defer></script>
   </body>
 </html>
