@@ -15,10 +15,10 @@ GoやC++などの静的型付け言語が好き．python，ruby，javascriptも�
 - clothes
 
 ## CTF team
-Contrail
+- [Contrail](https://ctftime.org/team/32733)
 
 ## 競技プログラミング
-- AtCoder : black13
+- AtCoder : [black13](https://atcoder.jp/users/black13)
 
 ## Contact
 wt.l00e at gmail.com
