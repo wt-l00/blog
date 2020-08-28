@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>システムコールの追加の仕方（Linux） | wt-l00 memo</title>
-    <meta name="generator" content="VuePress 1.5.0">
+    <meta name="generator" content="VuePress 1.5.4">
     <meta name="description" content="wt-l00 blog">
-    <link rel="preload" href="/blog/assets/css/0.styles.ec15a4b2.css" as="style"><link rel="preload" href="/blog/assets/js/app.396d899c.js" as="script"><link rel="preload" href="/blog/assets/js/7.ebf4d7aa.js" as="script"><link rel="preload" href="/blog/assets/js/15.4e90604a.js" as="script"><link rel="prefetch" href="/blog/assets/js/1.fe444396.js"><link rel="prefetch" href="/blog/assets/js/10.58da3471.js"><link rel="prefetch" href="/blog/assets/js/11.f56abd61.js"><link rel="prefetch" href="/blog/assets/js/12.96edf242.js"><link rel="prefetch" href="/blog/assets/js/13.743d72f5.js"><link rel="prefetch" href="/blog/assets/js/14.eef003a3.js"><link rel="prefetch" href="/blog/assets/js/16.d11dca68.js"><link rel="prefetch" href="/blog/assets/js/17.e397beef.js"><link rel="prefetch" href="/blog/assets/js/18.59c27f4c.js"><link rel="prefetch" href="/blog/assets/js/3.0e88bb10.js"><link rel="prefetch" href="/blog/assets/js/4.6fb5bb26.js"><link rel="prefetch" href="/blog/assets/js/5.e43b6925.js"><link rel="prefetch" href="/blog/assets/js/6.917ea184.js"><link rel="prefetch" href="/blog/assets/js/8.b90452c8.js"><link rel="prefetch" href="/blog/assets/js/9.bd0c7e16.js">
-    <link rel="stylesheet" href="/blog/assets/css/0.styles.ec15a4b2.css">
+    <link rel="preload" href="/blog/assets/css/0.styles.8908620a.css" as="style"><link rel="preload" href="/blog/assets/js/app.a8f4d1e2.js" as="script"><link rel="preload" href="/blog/assets/js/7.a8ea06df.js" as="script"><link rel="preload" href="/blog/assets/js/15.c272dca1.js" as="script"><link rel="prefetch" href="/blog/assets/js/1.91dfcd86.js"><link rel="prefetch" href="/blog/assets/js/10.1037b50a.js"><link rel="prefetch" href="/blog/assets/js/11.48aec50a.js"><link rel="prefetch" href="/blog/assets/js/12.a9ab2851.js"><link rel="prefetch" href="/blog/assets/js/13.00a03562.js"><link rel="prefetch" href="/blog/assets/js/14.8089eca6.js"><link rel="prefetch" href="/blog/assets/js/16.8df3f352.js"><link rel="prefetch" href="/blog/assets/js/17.d04e945f.js"><link rel="prefetch" href="/blog/assets/js/18.f250b9b5.js"><link rel="prefetch" href="/blog/assets/js/3.f4b46eed.js"><link rel="prefetch" href="/blog/assets/js/4.da306e33.js"><link rel="prefetch" href="/blog/assets/js/5.af418eb0.js"><link rel="prefetch" href="/blog/assets/js/6.85f0905f.js"><link rel="prefetch" href="/blog/assets/js/8.aeba21ee.js"><link rel="prefetch" href="/blog/assets/js/9.2c2eff00.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.8908620a.css">
   </head>
   <body>
     <div id="app" data-server-rendered="true"><div id="vuepress-theme-meteorlxy"><header class="header" style="background-size:cover;background-repeat:no-repeat;background-position:center;background-attachment:scroll;background-image:url(/blog/img/bg.jpg);" data-v-7a046aea><div data-v-e4145d0a data-v-7a046aea><nav class="navbar" data-v-e4145d0a><div class="container" data-v-e4145d0a><a href="/blog/" class="router-link-active" data-v-e4145d0a><span class="navbar-site-name" data-v-e4145d0a>
@@ -31,9 +31,9 @@
     </a></section></section> <article class="main-div"><div class="post-content content content__default"><h1 id="システムコールの追加"><a href="#システムコールの追加" class="header-anchor">#</a> システムコールの追加</h1> <p>arch/x86/entry/syscalls/syscall_64.tbl
 add 335 common hello sys_hello</p> <p>include/linux/syscalls.h
 add asmlinkage long sys_hello(void)</p> <p>make hello directory</p> <p>in hello directory
-make hello.c and Makefile</p> <p>hello.c</p> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;linux/kernel.h&gt;</span></span>
-<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;linux/sched.h&gt;</span></span>
-<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;linux/cred.h&gt;</span></span>
+make hello.c and Makefile</p> <p>hello.c</p> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;linux/kernel.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;linux/sched.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;linux/cred.h&gt;</span></span>
 asmlinkage <span class="token keyword">long</span> <span class="token function">sys_hello</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token number">0xdeadbeef</span><span class="token punctuation">;</span>
@@ -41,9 +41,9 @@ asmlinkage <span class="token keyword">long</span> <span class="token function">
 </code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>Makefile</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>obj-y := hello.c
 </code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>modify Makefile located at root path of linux src
 Makefile</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>core-y += kernel/ mm/ fs/ ipc/ security/ crypto/ block/ hello/
-</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>再ビルドして，システムコールの動作を確かめる．</p> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;unistd.h&gt;</span></span>
-<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;sys/syscall.h&gt;</span></span>
-<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>再ビルドして，システムコールの動作を確かめる．</p> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;unistd.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;sys/syscall.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%lx\n&quot;</span><span class="token punctuation">,</span> <span class="token function">syscall</span><span class="token punctuation">(</span><span class="token number">335</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
@@ -71,6 +71,6 @@ Makefile</p> <div class="language- line-numbers-mode"><pre class="language-text"
     </a> <span data-v-1375e54c> | </span> <a href="https://github.com/meteorlxy/vuepress-theme-meteorlxy" target="_blank" data-v-1375e54c>
         meteorlxy
       </a></p> <p class="footer-text" data-v-1375e54c>Copyright 2018-present <a href="https://github.com/meteorlxy" target="_blank">meteorlxy</a> | MIT License</p></footer></div><div class="global-ui"><!----><!----></div></div>
-    <script src="/blog/assets/js/app.396d899c.js" defer></script><script src="/blog/assets/js/7.ebf4d7aa.js" defer></script><script src="/blog/assets/js/15.4e90604a.js" defer></script>
+    <script src="/blog/assets/js/app.a8f4d1e2.js" defer></script><script src="/blog/assets/js/7.a8ea06df.js" defer></script><script src="/blog/assets/js/15.c272dca1.js" defer></script>
   </body>
 </html>
