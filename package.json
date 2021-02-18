@@ -16,6 +16,6 @@
     "src:build": "vuepress build src --dest docs"
   },
   "devDependencies": {
-    "@vuepress/plugin-nprogress": "^1.7.1"
+    "@vuepress/plugin-nprogress": "^1.8.2"
   }
 }
