@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "20:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@vuepress/plugin-nprogress"
+    versions:
+    - 1.8.1
+  - dependency-name: vuepress
+    versions:
+    - 1.8.1
